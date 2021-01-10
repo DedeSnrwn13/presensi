@@ -1,0 +1,107 @@
+@import url("fonts.css");
+.nama {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 18px;
+    margin-bottom: 3px;
+}
+
+.role {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.time {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    color: #28abb9;
+}
+
+.tanggal {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+.check {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#view {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
+/*style untuk popup */
+
+#popup1,
+#popup2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 99999999999;
+    transition: all 1s;
+}
+
+.popup-container {
+    width: 393px;
+    position: relative;
+    margin: 2% auto;
+    padding: 80px 44px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+/* style untuk isi popup */
+
+.berhasil {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 24px;
+}
+
+.desk {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+.tutup {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+    color: #9a9a9a;
+}
+
+@media screen and (max-width: 375px) {
+    .popup-container {
+        width: 300px;
+        margin: 10% auto;
+    }
+}

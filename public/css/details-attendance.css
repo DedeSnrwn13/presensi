@@ -1,0 +1,86 @@
+.title {
+    font-family: Open Sans;
+    font-weight: 700;
+    color: #000000;
+    font-size: 26px;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    left: 260px;
+    top: 125px;
+    opacity: 0.1;
+    border: 1px solid #000000;
+    margin-bottom: 16px;
+}
+
+.key {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.tikwa {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.value {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+
+.quest {
+    margin-top: 190px;
+}
+
+.quest span {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 375px) {
+    #profileReport {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #profileReport img {
+        /* padding-left: 31%;
+        padding-right: 31%; */
+        padding-bottom: 12px;
+    }
+    #profileReport .key {
+        font-size: 14px;
+        width: 40%;
+    }
+    #profileReport .tikwa {
+        font-size: 16px;
+        width: 10%;
+    }
+    #profileReport .value {
+        font-size: 14px;
+        width: 50%;
+    }
+    th,
+    td {
+        font-size: 14px;
+        font-family: Open Sans;
+    }
+}

@@ -1,0 +1,22 @@
+@import url("fonts.css");
+.title {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 36px;
+    color: #111111;
+    opacity: 0.8;
+}
+
+.title b {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 36px;
+    color: #28abb9;
+}
+
+form label {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    color: #505050;
+}
