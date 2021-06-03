@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\{Route, Auth};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'FrontController@index')->name('/');
 Route::get('/details-of-working-hours', 'FrontController@hours');
 
-// Auth::routes();
+Auth::routes();
 
 Route::middleware('guest')->group(function () {
     // Login Admin

@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Auth;
 
 class CheckRole
 {
@@ -14,13 +13,12 @@ class CheckRole
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, ...$roles)
     {
-
-        if (Auth::check() && Auth::user()->role == 'admin') {
+        if(in_array($request->user()->role, $roles)) {
             return $next($request);
-        } elseif (Auth::check() && Auth::user()->role == 'teacher') {
-            return $next($request);
+        } else {
+            return redirect()->back();
         }
     }
 }
